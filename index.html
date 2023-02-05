@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>芜湖博客</title>
+  </head>
+  <style>
+  *{
+    margin:0;
+    padding:0;
+    }
+  body{
+    background: #fcfcfc;
+    
+    }
+  .header{
+    height:200px;
+    background:skyblue;
+    color:white;
+    text-align:center;
+    }
+  .header h1{
+    padding-top:70px;
+    font-size:60px;
+    font-weight:400;
+    }
+  .header p{
+    font-size:30px;
+    font-weight:300;
+    }
+ .box{
+   overflow:hidden;
+   width:90%;
+   height:auto;
+   margin: 0 auto;
+   margin-top:20px;
+   box-shadow:2px 2px 30px rgba(0,0,0);
+   border-radius:10px;
+   }
+.box .top img{
+  width:100%;
+  }
+.buttom{
+  padding:10px 10px 30px;
+ }
+.buttom h1{
+  font-size:22px;
+  font-weight:400;
+  text-indent:2em;
+  color:red;
+  }
+.buttom p{
+font-size:14px;
+color:black;
+text-indent:2em;
+}
+  </style>
+  <body>	
+	<div class="header">
+ <h1>芜湖</h1>
+ <p>欢迎来到我的博客园</p>
+ </div>
+ <div class="content">
+ <div class="box" onclick="kali()">
+ <div class="top">
+ <img src="Screenshot_2023_0205_014803.png"/>
+ </div>
+ <div class="buttom">
+ <h1>如何使用termux安装kali</h1>
+ <p>首先先需要下载一个termux</p>
+ <p>直接在浏览器搜索一下就有了</p>
+ <p>然后打开我们的termux输入下边这一串命令切换清华源</p>
+ <p>sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/apt/termux-main stable main@' $PREFIX/etc/apt/sources.list
+apt update && apt upgrade</p>
+ <p>当然如果你安装的是zerotermux的话直接左滑找到切换源换清华源就可以了其他源可以自己换</p>
+ <p>之后就输入pkg install wget来安装wget</p>
+ <p>安装好之后就输入wget -O install-nethunter-termux https://offs.ec/2MceZWr</p>
+ <p>好了之后打出这两个命令</p>
+ <p>chmod +x install-nethunter-termux</p>
+ <p>./install-nethunter-termux</p>
+ <p>接下来就是一个很漫长的过程本人建议在晚上的时候安装</p>
+ <p>安装解压好之后输入nh -r</p>
+ <p>就能进入kali系统了</p>
+ </div>
+ </div>
+ </div>
+ <div class="footer"></div>
+ <script>
+  </body>
+</html>
